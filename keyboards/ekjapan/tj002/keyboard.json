@@ -1,0 +1,59 @@
+{
+    "manufacturer": "ekjapan",
+    "keyboard_name": "TJ-002 Tenkeypad",
+    "maintainer": "ekjapan",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "encoder": {
+        "rotary": [
+            {"pin_a": "F6", "pin_b": "F7"},
+            {"pin_a": "F4", "pin_b": "F5"}
+        ]
+    },
+    "features": {
+        "bootmagic": true,
+        "encoder": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "via": true
+    },
+    "bootmagic": {
+        "matrix": [1,0]
+    },
+    "matrix_pins": {
+        "cols": ["E6", "D7", "C6", "B1"],
+        "rows": ["B3", "D0", "D1", "D2", "D3"]
+    },
+    "processor": "atmega32u4",
+    "usb": {
+        "max_power": 100
+        "device_version": "0.0.1",
+        "pid": "0x010C",
+        "vid": "0x2EF7"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K01", "matrix": [0, 1], "x": 0, "y": 0},
+                {"label": "K02", "matrix": [0, 2], "x": 1, "y": 0},
+                {"label": "K10", "matrix": [1, 0], "x": 2, "y": 0},
+                {"label": "K11", "matrix": [1, 1], "x": 3, "y": 0},
+                {"label": "K12", "matrix": [1, 2], "x": 4, "y": 0},
+                {"label": "K13", "matrix": [1, 3], "x": 5, "y": 0},
+                {"label": "K20", "matrix": [2, 0], "x": 6, "y": 0},
+                {"label": "K21", "matrix": [2, 1], "x": 7, "y": 0},
+                {"label": "K22", "matrix": [2, 2], "x": 8, "y": 0},
+                {"label": "K23", "matrix": [2, 3], "x": 9, "y": 0},
+                {"label": "K30", "matrix": [3, 0], "x": 10, "y": 0},
+                {"label": "K31", "matrix": [3, 1], "x": 11, "y": 0},
+                {"label": "K32", "matrix": [3, 2], "x": 12, "y": 0},
+                {"label": "K33", "matrix": [3, 3], "x": 13, "y": 0},
+                {"label": "K40", "matrix": [4, 0], "x": 14, "y": 0},
+                {"label": "K41", "matrix": [4, 1], "x": 15, "y": 0},
+                {"label": "K42", "matrix": [4, 2], "x": 16, "y": 0},
+                {"label": "K43", "matrix": [4, 3], "x": 17, "y": 0}
+            ]
+        }
+    }
+}
