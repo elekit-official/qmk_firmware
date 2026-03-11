@@ -23,14 +23,33 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT_ortho_2x6(
+    [0] = LAYOUT(
 	LCTL(KC_KP_MINUS),    LCTL(KC_KP_PLUS),    KC_MUTE,
-        MYHELLO,    LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V)
+        MYHELLO,    LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V),
+        KC_NO, KC_NO
+    ),
+    [1] = LAYOUT(
+	_______,    _______,    _______,
+        _______,    _______,    _______,    _______,
+        KC_NO, KC_NO
+    ),
+    [2] = LAYOUT(
+	_______,    _______,    _______,
+        _______,    _______,    _______,    _______,
+        KC_NO, KC_NO
+    ),
+    [3] = LAYOUT(
+	_______,    _______,    _______,
+        _______,    _______,    _______,    _______,
+        KC_NO, KC_NO
     )
 };
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
+    [0] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [1] =   { ENCODER_CCW_CW(KC_NO, KC_NO) },
+    [2] =   { ENCODER_CCW_CW(KC_NO, KC_NO) },
+    [3] =   { ENCODER_CCW_CW(KC_NO, KC_NO) }
 };
 #endif
